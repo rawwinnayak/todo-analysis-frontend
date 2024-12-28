@@ -17,6 +17,7 @@ const Settings = () => {
   ];
 
   return (
+    
     <SafeAreaView style={tw`flex-1 bg-gray-50 mt-6 pt-4`}>
       <ScrollView contentContainerStyle={tw`p-4`}>
         <CustomText text="Settings and Preferences" Variant="h3" style={tw`text-blue-600 mb-4 border-b-2 border-gray-300 text-center`} />
