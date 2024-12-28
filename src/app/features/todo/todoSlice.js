@@ -30,8 +30,6 @@ export const todoSlice = createSlice({
         },
         toggleTask(state, action) {
             const tasks_record = state.tasks_record.find((tasks_record) => tasks_record.task === action.payload);
-            console.log("task record :",tasks_record);
-            console.log("=====================================");
             if (tasks_record.completed) {
                 tasks_record.completed = false
             }

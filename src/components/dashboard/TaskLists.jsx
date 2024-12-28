@@ -9,8 +9,6 @@ import { FontAwesome } from "@expo/vector-icons";
 
 const TaskLists = ({ tasks }) => {
   const dispatch = useDispatch();
-  console.log("tasks list", tasks);
-  console.log("=====================================");
   // Calculate progress percentage
   const totalTasks = tasks.length;
   const completedTasks = tasks.filter((task) => task.completed).length;
@@ -19,10 +17,7 @@ const TaskLists = ({ tasks }) => {
 
   // Toggle task completion
   const toggleCompletion = (task) => {
-    console.log("Task completed:", task.completed);
-    console.log("=====================================");
-    dispatch(toggleTask(task.task)); // Dispatch the toggleTask action
-    // task.completed = !task.completed; // Toggle the completed status
+    dispatch(toggleTask(task.task)); 
   };
 
   return (

@@ -130,11 +130,10 @@ const AnalyzeMood = () => {
                 <Picker.Item label="Relaxed" value="relaxed" />
                 {/* Add more moods as needed */}
               </Picker>
-            {/* </View> */}
+           
 
             {/* Energy Level Picker */}
-            {/* <View style={tw`bg-white p-4 rounded-lg shadow mb-4`}> */}
-              <CustomText
+           <CustomText
                 text="Energy Level"
                 Variant="h6"
                 style={tw`text-gray-700 mb-2`}
@@ -149,11 +148,7 @@ const AnalyzeMood = () => {
                 <Picker.Item label="High" value="high" />
                 {/* Add more energy levels if needed */}
               </Picker>
-            {/* </View> */}
-
-            {/* Time Available Picker */}
-            {/* <View style={tw`bg-white p-4 rounded-lg shadow mb-</View>4`}> */}
-              <CustomText
+             <CustomText
                 text="Time Available (in minutes)"
                 Variant="h6"
                 style={tw`text-gray-700 mb-2`}
